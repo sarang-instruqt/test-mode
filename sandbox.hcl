@@ -1,6 +1,6 @@
 # Network - Foundation for all container communication
 resource "network" "main" {
-  subnet = "10.0.198.0/24"
+  subnet = "10.0.199.0/24"
 }
 
 # Container - nginx web server with network connection
