@@ -1,6 +1,15 @@
 resource "lab" "main" {
-  title       = "Skeleton Lab"
-  description = "This is the Skeleton Lab.\nYou can use this as a minimal starting point for developing labs.\n\nFor more information, check ./assets/README.md"
+  title = "My Web Server Lab"
+  description = "Learn web server basics by customizing an nginx homepage"
+  layout = resource.layout.two_column
 
-  layout = resource.layout.single_panel
+  content {
+    chapter "getting_started" {
+      title = "Getting Started with Web Servers"
+
+      page "customize_homepage" {
+        reference = resource.page.customize_homepage
+      }
+    }
+  }
 }
